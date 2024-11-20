@@ -1,0 +1,182 @@
+*
+  box-sizing border-box
+  margin 0
+  padding 0
+body
+  font-family Arial, sans-serif
+.logo
+  display flex
+  align-items center
+  margin-top 5rem
+  margin-left auto
+  margin-right auto
+  width 22rem
+  font-family cursive
+  color red
+  text-shadow rgba(5, 5, 236, 1) 2px 1px 1px
+  margin-left 0
+  max-width 320px
+  img
+    margin-right 1rem
+  h1
+    margin 0
+    font-size 1.3rem
+  p
+    margin-top 4rem
+    margin-left -10rem
+    white-space nowrap
+    margin-top 5rem
+    margin-left -4rem
+    margin-top 1rem
+    margin-left 0
+    font-size 20px
+    color black
+.main-content
+  display flex
+  flex-direction column
+  align-items center
+  margin-bottom 40px
+.features
+  display flex
+  flex-wrap wrap
+  gap 2rem
+  justify-content center
+  margin 2rem 0
+  display flex
+  flex-wrap wrap
+  gap 0
+  justify-content unset
+  margin 0.1rem 0.1rem
+  max-width 425px
+  left 0
+.feature
+  display flex
+  align-items center
+  width 30rem
+  border 3px solid black
+  padding 1rem
+  gap 1rem
+  margin 0 auto
+  margin-top 1rem
+  width 30rem
+  padding 1rem
+  margin-left unset
+  margin-right unset
+  border white 3px solid
+  padding 1rem
+  flex-direction column
+  align-items center
+  text-align center
+  padding 1rem
+  display flex
+  align-items center
+  width auto
+  border 3px solid black
+  padding 1rem
+  gap 1rem
+  img
+    width 15rem
+  h2
+    margin 0 0 1rem
+    margin-left 1rem
+    margin-bottom 7rem
+    margin 0 0 0.5rem
+  p
+    margin 0
+    margin 0
+.feature-content
+  display flex
+  flex-direction column
+.subscription
+  display flex
+  gap 10px
+  margin-bottom 3rem
+  flex-direction column
+  margin-left 2rem
+  width 100%
+  flex-direction column
+  align-items center
+  margin-left 0
+  input[type="email"]
+    padding 10px
+    font-size 16px
+    width 25rem
+    border 1px solid #ccc
+  button
+    padding 10px 20px
+    font-size 16px
+    cursor pointer
+.footer
+  display flex
+  margin-right auto
+  margin-left auto
+  width 18rem
+  gap 3rem
+  margin-left 1rem
+  flex-direction column
+  align-items center
+  gap 0
+  margin-left auto
+  margin-right auto
+  ul
+    list-style-type none
+    margin-bottom 1rem
+  li
+    font-size 14px
+    color #666
+    margin 5px 0
+    margin-bottom 0.5rem
+    margin-top 0.5rem
+.footer-div
+  border-top black 3px solid
+  border-top black 3px solid
+  margin-left 2rem
+  width 320px
+  text-align center
+  margin-left 0
+.step
+  h3
+    font-size 2.5rem
+    margin-right 1rem
+    position absolute
+    margin-top 15%
+  h4
+    font-size 1rem
+    margin-left 15%
+    margin-top 15%
+  p
+    word-wrap break-word
+    margin-left 15%
+    margin-top 1%
+@media (max-width: 768px)
+  .features
+  flex-direction column
+
+  .step h3, .step h4, .step p
+    margin-left 0
+    text-align center
+
+@media (max-width: 426px)
+  .step h3
+    font-size 2rem
+    margin-top 5%
+  .logo
+    flex-direction column
+    align-items center
+
+@media (max-width: 375px)
+  .step h3
+    font-size 1.8rem
+    margin-top 5%
+
+@media (max-width: 325px)
+  .subscription input[type="email"],
+  .subscription button
+    width 15rem
+
+.subscription input[type="email"],
+.subscription button
+  width 20rem
+
+.step h4, .step p
+  font-size 0.9rem

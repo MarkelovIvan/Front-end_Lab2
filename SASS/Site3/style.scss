@@ -1,0 +1,249 @@
+$color_1: #fff;
+$color_2: #ccc;
+$color_3: red;
+$font-family_1: Arial, sans-serif;
+$font-family_2: cursive;
+$background-color_1: #f0f0f0;
+$background-color_2: #fff;
+$background-color_3: #f9f9f9;
+$background-color_4: #333;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font-family_1;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: $background-color_1;
+}
+.logo {
+	font-weight: bold;
+	font-size: 1.5rem;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: $font-family_2;
+	color: $color_3;
+	text-shadow: rgba(5, 5, 236, 1) 2px 1px 1px;
+}
+.register-btn {
+	padding: 0.5rem 1rem;
+	border: 1px solid #000;
+	background-color: $background-color_2;
+	cursor: pointer;
+}
+.main-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 2rem;
+	img {
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		border: brown 10px ridge;
+	}
+}
+.intro {
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+	p {
+		margin-bottom: 1rem;
+	}
+}
+.main-register-btn {
+	padding: 0.5rem 1rem;
+	border: 1px solid #000;
+	background-color: $background-color_2;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+.three-columns {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 2rem;
+	gap: 1rem;
+	.column {
+		width: 30%;
+		border: 1px solid #ddd;
+		padding: 1rem;
+		background-color: $background-color_3;
+	}
+}
+.button-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+.button-step-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+.button-button-step-container {
+	padding: 0.5rem 1rem;
+	border: 1px solid #000;
+	background-color: $background-color_2;
+	cursor: pointer;
+	width: 30%;
+}
+.three-columns-btn {
+	padding: 0.5rem 1rem;
+	border: 1px solid #000;
+	background-color: $background-color_2;
+	cursor: pointer;
+	width: 30%;
+}
+.step-guide {
+	padding: 2rem;
+	text-align: center;
+}
+.steps {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin: 3%;
+}
+.step {
+	border: 1px solid #ddd;
+	padding: 1rem;
+	background-color: $background-color_3;
+	position: relative;
+	height: 230px;
+	h3 {
+		font-size: 2.5rem;
+		margin-right: 1rem;
+		position: absolute;
+		margin-top: 15%;
+	}
+	h4 {
+		font-size: 1rem;
+		margin-left: 15%;
+		margin-top: 15%;
+	}
+	p {
+		word-wrap: break-word;
+		margin-left: 15%;
+		margin-top: 1%;
+	}
+}
+.footer {
+	background-color: $background-color_4;
+	color: $color_1;
+	padding: 20px;
+	margin-top: 2rem;
+}
+.footer-container {
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-links {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	span {
+		color: $color_2;
+		text-decoration: none;
+		font-size: 1rem;
+		transition: color 0.3s ease;
+		text-align: center;
+		&:hover {
+			color: $color_1;
+		}
+	}
+}
+.Head-text1 {
+	text-align: center;
+	margin-top: 2rem;
+}
+.spacer {
+	height: 15px;
+}
+@media (max-width: 1200px) {
+	.three-columns {
+		.column {
+			width: 45%;
+		}
+	}
+}
+@media (max-width: 992px) {
+	.three-columns {
+		.column {
+			width: 48%;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.main-content {
+		grid-template-columns: 1fr;
+		padding: 1rem;
+		gap: 1rem;
+	}
+	.three-columns {
+		flex-direction: column;
+		.column {
+			width: 100%;
+			padding: 1rem;
+		}
+	}
+	.steps {
+		grid-template-columns: 1fr;
+	}
+	.footer-links {
+		gap: 1rem;
+		grid-template-columns: 1fr 1fr;
+	}
+	.logo {
+		font-size: 1.2rem;
+	}
+	.button-button-step-container {
+		width: 80%;
+	}
+	.three-columns-btn {
+		width: 80%;
+	}
+	.register-btn {
+		font-size: 0.9rem;
+	}
+}
+@media (max-width: 426px) {
+	.footer-links {
+		gap: 1rem;
+		grid-template-columns: 1fr;
+		span {
+			font-size: 0.8rem;
+		}
+	}
+	.button-button-step-container {
+		width: 90%;
+	}
+	.three-columns-btn {
+		width: 90%;
+	}
+	.logo {
+		font-size: 1.2rem;
+	}
+}
+@media (max-width: 365px) {
+	.footer-links {
+		span {
+			font-size: 0.7rem;
+		}
+	}
+	.steps {
+		margin: 1rem;
+	}
+	.step {
+		h3 {
+			font-size: 2rem;
+		}
+	}
+}

@@ -1,0 +1,68 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "SASS Site 1",
+            "type": "shell",
+            "command": "sass SASS//Site1//style.scss SASS//Site1//style-sass.css",
+            "group": "build"
+        },
+        {
+            "label": "SASS Site 2",
+            "type": "shell",
+            "command": "sass SASS//Site2//style.scss SASS//Site2//style-sass.css",
+            "group": "build"
+        },
+        {
+            "label": "SASS Site 3",
+            "type": "shell",
+            "command": "sass SASS//Site3//style.scss SASS//Site3//style-sass.css",
+            "group": "build"
+        },
+        {
+            "label": "SASS Site 4",
+            "type": "shell",
+            "command": "sass SASS//Site4//style.scss SASS//Site4//style-sass.css",
+            "group": "build"
+        },
+        {
+            "label": "SASS Site 5",
+            "type": "shell",
+            "command": "sass SASS//Site5//style.scss SASS//Site5//style-sass.css",
+            "group": "build"
+        },
+        {
+            "label": "STYLUS Site 1",
+            "type": "shell",
+            "command": "stylus STYLUS//Site1//styles//style.styl -o STYLUS//Site1//styles//style-stylus.css",
+            "group": "build"
+        },
+        {
+            "label": "STYLUS Site 2",
+            "type": "shell",
+            "command": "stylus STYLUS//Site2//styles//style.styl -o STYLUS//Site2//styles//style-stylus.css",
+            "group": "build"
+        },
+        {
+            "label": "STYLUS Site 3",
+            "type": "shell",
+            "command": "stylus STYLUS//Site3//styles//style.styl -o STYLUS//Site3//styles//style-stylus.css",
+            "group": "build"
+        },
+        {
+            "label": "STYLUS Site 4",
+            "type": "shell",
+            "command": "stylus STYLUS//Site4//styles//style.styl -o STYLUS//Site4//styles//style-stylus.css",
+            "group": "build"
+        },
+        {
+            "label": "STYLUS Site 5",
+            "type": "shell",
+            "command": "stylus STYLUS//Site5//styles//style.styl -o STYLUS//Site5//styles//style-stylus.css",
+            "group": "build"
+        }
+
+    ]
+}

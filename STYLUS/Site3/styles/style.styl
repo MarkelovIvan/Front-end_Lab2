@@ -1,0 +1,223 @@
+/* Загальний Reset */
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  font-family Arial, sans-serif
+
+/* Header */
+header
+  display flex
+  justify-content space-between
+  align-items center
+  padding 1rem
+  background-color #f0f0f0
+
+.logo
+  font-weight bold
+  font-size 1.5rem
+
+.register-btn
+  padding 0.5rem 1rem
+  border 1px solid #000
+  background-color #fff
+  cursor pointer
+
+/* Main Content */
+.main-content
+  display grid
+  grid-template-columns 1fr 1fr
+  padding 2rem
+
+.intro h1
+  font-size 2rem
+  margin-bottom 1rem
+
+.intro p
+  margin-bottom 1rem
+
+.main-register-btn
+  padding 0.5rem 1rem
+  border 1px solid #000
+  background-color #fff
+  cursor pointer
+  margin-top 1rem
+
+.main-content img
+  margin-left auto
+  margin-right auto
+  width 70%
+  border brown 10px ridge
+
+/* Three Column Section */
+.three-columns
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  padding 2rem
+  gap 1rem
+
+.three-columns .column
+  width 30%
+  border 1px solid #ddd
+  padding 1rem
+  background-color #f9f9f9
+
+/* Центрирование кнопки под колонками */
+.button-container,
+.button-step-container
+  width 100%
+  display flex
+  justify-content center
+  margin-top 1rem
+
+.button-button-step-container,
+.three-columns-btn
+  padding 0.5rem 1rem
+  border 1px solid #000
+  background-color #fff
+  cursor pointer
+  width 30%
+
+/* Step-by-Step Guide */
+.step-guide
+  padding 2rem
+  text-align center
+
+.steps
+  display grid
+  grid-template-columns repeat(3, 1fr)
+  gap 1rem
+  margin 3%
+
+.step
+  border 1px solid #ddd
+  padding 1rem
+  background-color #f9f9f9
+  position relative
+  height 230px
+
+/* Номер слева */
+.step h3
+  font-size 2.5rem
+  margin-right 1rem
+  position absolute
+  margin-top 15%
+
+/* Заголовок справа вверху */
+.step h4
+  font-size 1rem
+  margin-left 15%
+  margin-top 15%
+
+/* Текст справа внизу */
+.step p
+  word-wrap break-word
+  margin-left 15%
+  margin-top 1%
+
+/* Основные стили футера */
+.footer
+  background-color #333
+  color #fff
+  padding 20px
+  margin-top 2rem
+
+.footer-container
+  justify-content space-between
+  align-items center
+
+.logo
+  font-size 14px
+  font-weight bold
+
+.footer-links
+  display grid
+  grid-template-columns repeat(3, 1fr)
+  gap 1rem
+
+.footer-links span
+  color #ccc
+  text-decoration none
+  font-size 1rem
+  transition color 0.3s ease
+  text-align center
+
+.footer-links span:hover
+  color #fff
+
+.Head-text1
+  text-align center
+  margin-top 2rem
+
+.spacer
+  height 15px
+
+/* Медіа-запити для мобільних пристроїв */
+@media (max-width: 1200px)
+  .three-columns .column
+    width 45%
+
+@media (max-width: 992px)
+  .three-columns .column
+    width 48%
+
+@media (max-width: 768px)
+  .main-content
+    grid-template-columns 1fr
+    padding 1rem
+    gap 1rem
+
+  .three-columns
+    flex-direction column
+
+  .three-columns .column
+    width 100%
+    padding 1rem
+
+  .steps
+    grid-template-columns 1fr
+
+  .footer-links
+    gap 1rem
+    grid-template-columns 1fr 1fr
+
+  .logo
+    font-size 1.2rem
+
+  .button-button-step-container,
+  .three-columns-btn
+    width 80%
+
+  .register-btn
+    font-size 0.9rem
+
+@media (max-width: 426px)
+  .footer-links
+    gap 1rem
+    grid-template-columns 1fr
+
+  .footer-links span
+    font-size 0.8rem
+
+  .button-button-step-container,
+  .three-columns-btn
+    width 90%
+
+  .logo
+    font-size 1.2rem
+
+@media (max-width: 365px)
+  .footer-links span
+    font-size 0.7rem
+
+  .steps
+    margin 1rem
+
+  .step h3
+    font-size 2rem
+
+.logo
+  font-family cursive
+  color red
+  text-shadow rgba(5, 5, 236, 1) 2px 1px 1px

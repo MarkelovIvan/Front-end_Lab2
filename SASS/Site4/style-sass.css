@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 20rem;
+  font-family: cursive;
+  color: red;
+  text-shadow: rgb(5, 5, 236) 2px 1px 1px;
+}
+
+.content {
+  display: flex;
+}
+
+.articles {
+  padding: 10px;
+  border: 3px solid black;
+  flex: 3;
+}
+
+.sidebar {
+  padding: 10px;
+  border: 3px solid black;
+  flex: 1;
+}
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.sidebar p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.post {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.images {
+  display: flex;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.image.double {
+  width: 100%;
+}
+
+.text {
+  flex: 1;
+}
+.text h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.text p {
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .image.double {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style-sass.css.map */
